@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
     background: #222;
@@ -105,32 +105,50 @@ table {
     border-collapse: collapse;
     margin-top: 1rem;
     background: #181818;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 16px rgba(0,255,208,0.05);
+    box-shadow: 0 2px 16px rgba(0,255,208,0.08);
 }
 
 th, td {
-    padding: 0.8rem;
+    padding: 1rem;
     text-align: center;
     border-bottom: 1px solid #333;
+    font-size: 1rem;
 }
 
 th {
     background: #222;
     color: #00ffd0;
     font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #333;
 }
 
-tfoot td {
+tfoot td.timetable-footer {
     background: #111;
     color: #fff;
     font-weight: bold;
     border-top: 2px solid #00ffd0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
 
 tr:nth-child(even) td {
     background: #232323;
+}
+
+tr td:first-child {
+    color: #00ffd0;
+    font-weight: 500;
+}
+
+tr td {
+    transition: background 0.2s;
+}
+
+tr:hover td {
+    background: #222;
 }
 
 footer {
@@ -139,5 +157,5 @@ footer {
     background: #111;
     color: #888;
     font-size: 1rem;
-    border-top: 1px solid #222;
+    border-top: 1px
 }
